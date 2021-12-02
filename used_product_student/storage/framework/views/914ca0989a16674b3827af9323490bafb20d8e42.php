@@ -1,0 +1,2 @@
+
+<?php echo $__env->make('layouts.admin', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\other_work\book_product_project\book_product_admin\resources\views/admin/index.blade.php ENDPATH**/ ?>

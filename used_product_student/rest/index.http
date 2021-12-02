@@ -1,0 +1,217 @@
+
+###
+GET http://valar.pub/api/categories
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "回锅肉"
+}
+
+###
+GET http://valar.pub/api/news
+Accept: application/json
+Content-Type: application/json
+
+{
+}
+
+###
+GET http://valar.pub/api/news/1
+Accept: application/json
+Content-Type: application/json
+
+{
+}
+
+###
+GET http://valar.pub/api/hot/products
+Accept: application/json
+Content-Type: application/json
+
+{
+}
+
+###
+GET http://valar.pub/api/address/1
+Accept: application/json
+Content-Type: application/json
+
+{
+}
+
+###
+POST http://valar.pub/api/address/1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "userName": "12312",
+    "phone": "18523722890",
+    "area": "重庆",
+    "address": "地址",
+    "code": 12312
+}
+
+
+###
+GET http://127.0.0.1:8000/api/products/1
+Accept: application/json
+Content-Type: application/json
+
+{
+}
+
+###
+POST http://127.0.0.1:8000/api/products/1/comment
+Accept: application/json
+Content-Type: application/json
+
+{
+    "content": "评论内容"
+}
+
+###
+GET https://valar.pub/api/members/1/comments
+Accept: application/json
+Content-Type: application/json
+
+{
+}
+
+###
+GET http://127.0.0.1:8000/api/feedbacks
+Accept: application/json
+Content-Type: application/json
+
+{
+}
+
+###
+GET http://127.0.0.1:8000/api/payments
+Accept: application/json
+Content-Type: application/json
+
+{
+}
+
+###
+POST https://valar.pub/api/members/3
+Accept: application/json
+Content-Type: application/json
+
+{
+    "real_name": "heping",
+    "phone_number": ""
+}
+
+###
+GET https://valar.pub/api/members/3
+Accept: application/json
+Content-Type: application/json
+
+{
+    "real_name": "heping",
+    "phone_number": ""
+}
+
+###
+GET http://valar.pub/api/orders/1
+Accept: application/json
+Content-Type: application/json
+
+{
+}
+
+###
+GET http://valar.pub/api/address/detail/1
+Accept: application/json
+Content-Type: application/json
+
+{
+}
+
+###
+POST http://valar.pub/api/address/detail/1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "phone": "18523922701"
+}
+
+###
+POST http://valar.pub/api/orders/1
+Accept: application/json
+Content-Type: application/json
+
+{"address_id":1,"payment_id":1,"phone_number":"","products":[{"id":3,"name":"123","image":"/images/3ZrcXaXh7cvFBCTd.png","num":3,"price":"123.00","sum":"123.00","selected":true}]}
+
+###
+POST http://valar.pub/api/orders/status/1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "status": 2
+}
+
+###
+GET https://valar.pub/api/orders/7/products
+Accept: application/json
+Content-Type: application/json
+
+{
+}
+
+
+###
+POST https://valar.pub/api/members/3/orders
+Accept: application/json
+Content-Type: application/json
+
+{
+    "seat_no": "NO21233",
+    "time": "00:01",
+    "payment_id": 1,
+    "phone_number": "",
+    "products": [
+        {
+            "id": 1,
+            "name": "球球",
+            "image": "https://seopic.699pic.com/photo/40007/2749.jpg_wh1200.jpg",
+            "num": "1",
+            "price": "123.00",
+            "sum": "123.00",
+            "selected": true
+        },
+        {
+            "id": 3,
+            "name": "123",
+            "image": "https://seopic.699pic.com/photo/40007/2749.jpg_wh1200.jpg",
+            "num": "1",
+            "price": "123.00",
+            "sum": "123.00",
+            "selected": true
+        }
+    ]
+}
+
+###
+POST http://127.0.0.1:8000/api/members/1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "real_name": "zh",
+    "phone_number": "18523822787"
+}
+
+###
+POST https://valar.pub/api/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "code": "081W5mll21Lgb64wZmol2eOAcn1W5mlS"
+}
